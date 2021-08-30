@@ -10,22 +10,23 @@ public class WritingFiles {
     public static void main(String[] args) throws IOException {
 
         //stream connectivity
-        File file = new File("C:\\astha\\FileWriting\\myTextFile3.csv");
+        //use .txt for text or notepad file, .csv for csv file or excel, .html for html files
+        File file = new File("C:\\astha\\FileWriting\\myTextFileHTML.html");
         FileWriter fileWriter = new FileWriter(file,false);
         BufferedWriter writer = new BufferedWriter(fileWriter);
 
         //writing inside the file
-        for(int i = 0 ; i<4 ; i++){
-
-            for(int j = 0 ; j<3 ; j++){
-
-                int num = (int) (Math.random() * 100);
-                writer.write(num + ",");
-
-            }
-
-            writer.newLine();
-        }
+//        for(int i = 0 ; i<4 ; i++){
+//
+//            for(int j = 0 ; j<3 ; j++){
+//
+//                int num = (int) (Math.random() * 100);
+//                writer.write(num + ",");
+//
+//            }
+//
+//            writer.newLine();
+//        }
 
 //        writer.newLine();
 //        writer.write("Second Line");
@@ -35,6 +36,10 @@ public class WritingFiles {
 //        writer.write("Way2Automation Tech");
 //        writer.newLine();
 //        writer.write("Kshitij");
+
+
+        //writing in a html file
+        writer.write("<html><body><title>Ways2Automation</title><h1>Learning Java from Ways2Automation</h1></body></html>");
 
         //closing stream
         writer.close();
