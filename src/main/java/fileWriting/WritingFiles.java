@@ -12,7 +12,7 @@ public class WritingFiles {
         //stream connectivity
         //use .txt for text or notepad file, .csv for csv file or excel, .html for html files
         File file = new File("C:\\astha\\FileWriting\\myTextFileHTML.html");
-        FileWriter fileWriter = new FileWriter(file,false);
+          FileWriter fileWriter = new FileWriter(file,false);
         BufferedWriter writer = new BufferedWriter(fileWriter);
 
         //writing inside the file

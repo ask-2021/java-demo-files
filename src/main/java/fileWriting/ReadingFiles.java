@@ -15,7 +15,7 @@ public class ReadingFiles {
         //System.out.println(reader.readLine());   --> this is going to print only first line so we need to add while loop
 
         //reading file using while loop
-        String line;// null;
+        String line;//= null;
         int counter = 0;
         while((line = reader.readLine())!=null){
             counter++;
